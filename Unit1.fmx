@@ -1,0 +1,26 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 480
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 3
+  object BannerAd1: TBannerAd
+    Align = Top
+    TestMode = True
+    OnActionCanBegin = BannerAd1ActionCanBegin
+    OnActionDidFinish = BannerAd1ActionDidFinish
+    OnDidLoad = BannerAd1DidLoad
+    OnDidFail = BannerAd1DidFail
+  end
+  object Label1: TLabel
+    Position.X = 8.000000000000000000
+    Position.Y = 56.000000000000000000
+    Text = 'Label1'
+    TabOrder = 1
+  end
+end
